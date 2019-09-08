@@ -1,16 +1,152 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title>Gemma Calmet | Psicologia i Coaching</title>
-		<style type="text/css" media="screen">
-
-		</style>
-	</head>
-	<body>
-		<header></header>
-		<main></main>
-		<footer></footer>
-	</body>
+<html lang="ca">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147345348-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-147345348-1');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Gemma Calmet | Psicologia i Coaching</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400&display=swap" rel="stylesheet" />
+    <style media="screen">
+      :root {
+        --primary: #d0b8b5;
+      }
+      body {
+        font-family: 'Noto Serif', serif;
+        margin: 0 auto;
+        max-width: 640px;
+        width: 100%;
+      }
+      body > * {
+        margin-top: 2em;
+        padding: 0 1em;
+      }
+      .visually-hidden {
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+        white-space: nowrap; /* added line */
+      }
+      hr {
+        background-color: transparent;
+        max-width: 100px;
+        border: none;
+        border-bottom: 1px solid var(--primary);
+      }
+      h1 {
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .logo {
+        width: 80%;
+        max-width: 360px;
+      }
+      main > section {
+        margin-top: 1em;
+      }
+      dt {
+        margin-top: 1em;
+        font-weight: bold;
+      }
+      footer {
+        margin-top: 5em;
+        display: flex;
+        justify-content: space-between;
+      }
+      footer img {
+        filter: grayscale(100%);
+        height: 75px;
+      }
+      footer img:hover {
+        filter: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span class="visually-hidden">Gemma Calmet | Psicologia i Coaching</span>
+        <img class="logo" src="img/logo_gemmacalmet_cat.png" alt="Logo Gemma Calmet" />
+      </h1>
+      <hr />
+    </header>
+    <main>
+      <section class="intro">
+        <h2 class="visually-hidden">Introducció</h2>
+        <p>Sóc la <strong>Gemma Calmet</strong>, psicòloga (col·legiada 23.278), terapeuta i coach (1.523 ISFCP).</p>
+        <p>
+          Fa <span id="anys"></span> anys que vaig obrir un despatx de psicologia i coaching a Manresa (Bages) on em
+          dedico a acompanyar persones en processos de canvi i creixement personal. Si creus que et pot interessar fer
+          aquest tipus de treball, contacta amb mi i farem una sessió inicial per valorar-ho.
+        </p>
+        <p>
+          Pots trobar més informació sobre la meva feina al blog
+          <a target="_blank" href="http://adlitteram.blog">Ad litteram</a>, a l'Instagram
+          <a target="_blank" href="https://www.instagram.com/litteram/">@litteram</a> i al
+          <a target="_blank" href="https://www.facebook.com/coachingmanresa"
+            >Facebook de <abbr title="Gemma Calmet | Psicologia i Coaching">GCPC</abbr></a
+          >. També sobre l'extraescolar d'educació emocional que faig a:
+          <a target="_blank" href="https://www.educacio-emocional.com/">L'Illa, extraescolar familiar</a>.
+        </p>
+      </section>
+      <section class="contact">
+        <h2>Contacte</h2>
+        <p>
+          La millor manera de contactar amb mi per a resoldre dubtes sobre la meva metodologia de treball o per a
+          concertar una visita és mitjançant el correu electrònic.
+        </p>
+        <dl>
+          <dt>Correu electrònic</dt>
+          <dd><a href="mailto:coaching@gemmacalmet.cat">coaching@gemmacalmet.cat</a></dd>
+          <dt>Telèfon</dt>
+          <dd><a href="tel:938728062">938 728 062</a></dd>
+          <dt>Adreça</dt>
+          <dd>
+            <a href="https://g.page/coachingmanresa?share">Carrer del Born, 10. Entresòl </a><br />08241 Manresa
+            (Barcelona)
+          </dd>
+        </dl>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <span class="visually-hidden">Psicòloga del Col·legi Oficial de Psicologia de Catalunya</span>
+        <a href="https://www.copc.cat/" target="_blank">
+          <img src="img/logo_col_psicologia.png" alt="Logo Col·legi Oficial de Psicologia de Catalunya" />
+        </a>
+      </div>
+      <div>
+        <span class="visually-hidden">Membre de ISFCP (International Society for Coaching Psichology)</span>
+        <a href="https://www.isfcp.info/" target="_blank">
+          <img src="img/logo_iscp.jpg" alt="Logo ISFCP" />
+        </a>
+      </div>
+      <div>
+        <span class="visually-hidden">Creadora de l'extraescolar d'educació emocional L'Illa.</span>
+        <a href="https://www.educacio-emocional.com/" target="_blank">
+          <img src="img/logo_illa.png" alt="Logo L'Illa" />
+        </a>
+      </div>
+    </footer>
+    <script>
+      var anys = document.getElementById('anys');
+      anys.innerText = Math.floor((new Date() - new Date('2012-01-01').getTime()) / 3.15576e10);
+    </script>
+  </body>
 </html>
